@@ -1,0 +1,359 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$light-color: #ecf0f1;
+$white-color: #fff;
+$button-padding: 10px 20px;
+$border-radius: 8px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$transition-time: 0.3s;
+$hover-lighten: 15%;
+$hover-darken: 10%;
+
+// General Styles
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $light-color;
+    color: $secondary-color;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color $transition-time ease;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+// Navbar
+.navbar {
+    background-color: $secondary-color;
+    color: $white-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: $box-shadow;
+
+    .logo {
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 0 20px;
+
+            a {
+                color: $white-color;
+                transition: color $transition-time ease;
+
+                &:hover {
+                    color: lighten($primary-color, $hover-lighten);
+                }
+            }
+        }
+    }
+
+    .auth-buttons {
+        display: flex;
+
+        .btn {
+            background-color: $primary-color;
+            color: $white-color;
+            padding: $button-padding;
+            border-radius: $border-radius;
+            transition: background-color $transition-time ease, transform $transition-time ease;
+
+            &:hover {
+                background-color: darken($primary-color, $hover-darken);
+                transform: scale(1.05);
+            }
+        }
+
+        .signup-btn {
+            margin-left: 15px;
+            background-color: lighten($primary-color, 10%);
+
+            &:hover {
+                background-color: lighten($primary-color, 5%);
+            }
+        }
+    }
+}
+
+.hero-section {
+    background-color: $primary-color;
+    color: $white-color;
+    padding: 100px 20px;
+    text-align: center;
+
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .hero-btn {
+            background-color: $white-color;
+            color: $primary-color;
+            padding: $button-padding;
+            border-radius: $border-radius;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $light-color;
+            }
+        }
+    }
+}
+
+// Initiatives Section
+.initiatives-section {
+    padding: 60px 20px;
+    background-color: $light-color;
+    text-align: center;
+
+    h2 {
+        color: $secondary-color;
+        margin-bottom: 50px;
+    }
+
+    .initiatives-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        .initiative-card {
+            background-color: $white-color;
+            padding: 25px;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            width: 280px;
+            transition: transform $transition-time ease, box-shadow $transition-time ease;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                color: $primary-color;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+// News Section
+.news-section {
+    padding: 60px 20px;
+    background-color: $white-color;
+    text-align: center;
+
+    h2 {
+        color: $secondary-color;
+        margin-bottom: 50px;
+    }
+
+    .news-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+
+        .news-card {
+            background-color: $light-color;
+            padding: 25px;
+            border-radius: $border-radius;
+            box-shadow: $box-shadow;
+            width: 280px;
+            transition: transform $transition-time ease, box-shadow $transition-time ease;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            h3 {
+                color: $primary-color;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+// sucess story section
+.success-stories {
+    padding: 2rem;
+    background-color: $light-color;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 2rem;
+        color: $secondary-color;
+    }
+
+    .stories {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .story {
+            background-color: $white-color;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+            margin-bottom: 1rem;
+
+            img {
+                border-radius: 50%;
+                width: 100px;
+                height: 100px;
+                margin-bottom: 1rem;
+            }
+
+            h3 {
+                margin-bottom: 0.5rem;
+                color: $primary-color;
+            }
+
+            p {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// Community Section
+.community-section {
+    padding: 60px 20px;
+    background-color: $light-color;
+    text-align: center;
+
+    h2 {
+        color: $secondary-color;
+        margin-bottom: 50px;
+    }
+
+    .community-content {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: $white-color;
+        padding: 40px;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+
+        p {
+            margin-bottom: 30px;
+        }
+
+        .community-btn {
+            background-color: $primary-color;
+            color: $white-color;
+            padding: $button-padding;
+            border-radius: $border-radius;
+            transition: background-color $transition-time ease, transform $transition-time ease;
+
+            &:hover {
+                background-color: darken($primary-color, $hover-darken);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// Footer
+.footer {
+    background-color: $secondary-color;
+    color: $white-color;
+    padding: 40px 20px;
+    text-align: center;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-section {
+            flex: 1;
+            margin: 10px 20px;
+
+            h3 {
+                margin-bottom: 15px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        color: lighten($white-color, 20%);
+                        transition: color $transition-time ease;
+
+                        &:hover {
+                            color: lighten($primary-color, $hover-lighten);
+                        }
+                    }
+                }
+            }
+
+            .social-icons {
+                display: flex;
+                gap: 10px;
+
+                a {
+                    color: lighten($white-color, 20%);
+                    font-size: 1.2em;
+                    transition: color $transition-time ease;
+
+                    &:hover {
+                        color: lighten($primary-color, $hover-lighten);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: lighten($white-color, 30%);
+    }
+}

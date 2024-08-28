@@ -1,0 +1,71 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$light-color: #ecf0f1;
+$white-color: #fff;
+$input-padding: 10px;
+$border-radius: 5px;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+// General
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: $white-color;
+    padding: 40px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    text-align: center;
+    width: 300px;
+
+    h2 {
+        margin-bottom: 20px;
+        color: $primary-color;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select {
+            margin-bottom: 15px;
+            padding: $input-padding;
+            border: 1px solid $light-color;
+            border-radius: $border-radius;
+            font-size: 14px;
+            width: 100%;
+
+            &:focus {
+                border-color: $primary-color;
+                outline: none;
+            }
+        }
+
+        input[type="submit"] {
+            background-color: $primary-color;
+            color: $white-color;
+            border: none;
+            padding: $input-padding;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: $border-radius;
+            font-size: 16px;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+}

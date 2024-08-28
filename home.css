@@ -1,0 +1,289 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #2c3e50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+.navbar .nav-links li {
+  margin: 0 20px;
+}
+.navbar .nav-links li a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.navbar .nav-links li a:hover {
+  color: #75b9e7;
+}
+.navbar .auth-buttons {
+  display: flex;
+}
+.navbar .auth-buttons .btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.navbar .auth-buttons .btn:hover {
+  background-color: #217dbb;
+  transform: scale(1.05);
+}
+.navbar .auth-buttons .signup-btn {
+  margin-left: 15px;
+  background-color: #5faee3;
+}
+.navbar .auth-buttons .signup-btn:hover {
+  background-color: #4aa3df;
+}
+
+.hero-section {
+  background-color: #3498db;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+.hero-section .hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.hero-section .hero-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+.hero-section .hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+.hero-section .hero-content .hero-btn {
+  background-color: #fff;
+  color: #3498db;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.hero-section .hero-content .hero-btn:hover {
+  background-color: #ecf0f1;
+}
+
+.initiatives-section {
+  padding: 60px 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.initiatives-section h2 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+.initiatives-section .initiatives-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.initiatives-section .initiatives-container .initiative-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.initiatives-section .initiatives-container .initiative-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.initiatives-section .initiatives-container .initiative-card h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+.initiatives-section .initiatives-container .initiative-card p {
+  color: #2c3e50;
+}
+
+.news-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.news-section h2 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+.news-section .news-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.news-section .news-container .news-card {
+  background-color: #ecf0f1;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.news-section .news-container .news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.news-section .news-container .news-card h3 {
+  color: #3498db;
+  margin-bottom: 15px;
+}
+.news-section .news-container .news-card p {
+  color: #2c3e50;
+}
+
+.success-stories {
+  padding: 2rem;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.success-stories h2 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+.success-stories .stories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.success-stories .stories .story {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 30%;
+  margin-bottom: 1rem;
+}
+.success-stories .stories .story img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.success-stories .stories .story h3 {
+  margin-bottom: 0.5rem;
+  color: #3498db;
+}
+.success-stories .stories .story p {
+  color: #2c3e50;
+}
+
+.community-section {
+  padding: 60px 20px;
+  background-color: #ecf0f1;
+  text-align: center;
+}
+.community-section h2 {
+  color: #2c3e50;
+  margin-bottom: 50px;
+}
+.community-section .community-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.community-section .community-content p {
+  margin-bottom: 30px;
+}
+.community-section .community-content .community-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.community-section .community-content .community-btn:hover {
+  background-color: #217dbb;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-container .footer-section {
+  flex: 1;
+  margin: 10px 20px;
+}
+.footer .footer-container .footer-section h3 {
+  margin-bottom: 15px;
+}
+.footer .footer-container .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-container .footer-section ul li {
+  margin-bottom: 10px;
+}
+.footer .footer-container .footer-section ul li a {
+  color: white;
+  transition: color 0.3s ease;
+}
+.footer .footer-container .footer-section ul li a:hover {
+  color: #75b9e7;
+}
+.footer .footer-container .footer-section .social-icons {
+  display: flex;
+  gap: 10px;
+}
+.footer .footer-container .footer-section .social-icons a {
+  color: white;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+.footer .footer-container .footer-section .social-icons a:hover {
+  color: #75b9e7;
+}
+.footer .footer-bottom {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: white;
+}
+
+/*# sourceMappingURL=home.css.map */
